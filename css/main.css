@@ -1,0 +1,52 @@
+.container{
+    min-height: 100vh;
+    background-color: #c2dbe3;
+    box-shadow: 8px 8px 6px rgba(0, 0, 0, 0.7);
+}
+.header{
+    direction: rtl;
+    
+}
+.item{
+    box-shadow: 4px 8px 6px rgba(12, 18, 58, 0.7);
+    transition: transform 0.4s;
+    cursor: pointer;
+    width: 370px;
+    
+}
+.item:hover{
+    transform: scale(1.07);
+    
+}
+.content{
+    width: 800px;
+    margin: 0 auto;
+}
+.icon{
+    top: 11px;
+    left: 20px;
+    font-size: 40px;
+    color: bisque;
+}
+.footer{
+    height: 100px;
+    align-items: center;
+}
+.mosuqe{
+    direction: ltr;
+    text-align: center;
+}
+.mosuqe span{
+    font-size: 70px;
+    font-weight: bold;
+    color: bisque;
+}
+.prayTime{
+    color: bisque;
+    font-weight: bold;
+    font-size: 25px;
+}
+.pray{
+    font-weight: bold;
+    color: bisque;
+}

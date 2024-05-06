@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>مواقيت الصلاة</title>
+  </head>
+  <body style="background-color: #1c1c1c">
+    <div class="container mx-auto m-4 rounded-4">
+      <div class="header d-flex justify-content-around p-3">
+        <div>
+          <h1 class=" ">مواقيت الصلاة</h1>
+          <h2 id="city">القاهرة</h2>
+          <h3 id="date"></h3>
+        </div>
+        <div class="mosuqe my-auto">
+          <span class="material-symbols-outlined">mosque</span>
+        </div>
+        <div class="rounded">
+          <select
+            name="المدينة"
+            id="cities"
+            style="
+              width: 300px;
+              height: 35px;
+              font-size: 25px;
+              background-color: bisque;
+              border-radius: 12px;
+            "
+          >
+            <option value="">اختار مدينة</option>
+          </select>
+        </div>
+      </div>
+      <hr class="my-2" style="margin: 0px 50px; border-color: #5200e1" />
+      <div class="row g-3">
+        <div
+          class="content p-2 d-flex justify-content-around align-items-center flex-wrap"
+        >
+          <div class="my-2 rounded-4 item bg-info">
+            <div class="position-relative">
+              <h1 class="text-center">صلاة الفجر</h1>
+              <span
+                class="material-symbols-outlined fw-bold position-absolute icon"
+                >mosque</span
+              >
+            </div>
+            <hr />
+            <div class="footer d-flex justify-content-around">
+              <h3 id="fajr" class="pray"></h3>
+              <span class="prayTime">موعد الصلاة</span>
+            </div>
+          </div>
+          <div class="my-2 rounded-4 item bg-info">
+            <div class="position-relative">
+              <h1 class="text-center">الشروق</h1>
+              <span
+                class="material-symbols-outlined fw-bold position-absolute icon"
+                >mosque</span
+              >
+            </div>
+            <hr />
+            <div class="footer d-flex justify-content-around">
+              <h3 id="shrouk" class="pray"></h3>
+              <span class="prayTime">موعد الشروق</span>
+            </div>
+          </div>
+          <div class="my-2 rounded-4 item bg-info">
+            <div class="position-relative">
+              <h1 class="text-center">صلاة الظهر</h1>
+              <span
+                class="material-symbols-outlined fw-bold position-absolute icon"
+                >mosque</span
+              >
+            </div>
+            <hr />
+            <div class="footer d-flex justify-content-around">
+              <h3 id="duhr" class="pray"></h3>
+              <span class="prayTime">موعد الصلاة</span>
+            </div>
+          </div>
+          <div class="my-2 rounded-4 item bg-info">
+            <div class="position-relative">
+              <h1 class="text-center">صلاة العصر</h1>
+              <span
+                class="material-symbols-outlined fw-bold position-absolute icon"
+                >mosque</span
+              >
+            </div>
+            <hr />
+            <div class="footer d-flex justify-content-around">
+              <h3 id="sunset" class="pray"></h3>
+              <span class="prayTime">موعد الصلاة</span>
+            </div>
+          </div>
+          <div class="my-2 rounded-4 item bg-info">
+            <div class="position-relative">
+              <h1 class="text-center">صلاة المغرب</h1>
+              <span
+                class="material-symbols-outlined fw-bold position-absolute icon"
+                >mosque</span
+              >
+            </div>
+            <hr />
+            <div class="footer d-flex justify-content-around">
+              <h3 id="magrb" class="pray"></h3>
+              <span class="prayTime">موعد الصلاة</span>
+            </div>
+          </div>
+          <div class="my-2 rounded-4 item bg-info">
+            <div class="position-relative">
+              <h1 class="text-center">صلاة العشاء</h1>
+              <span
+                class="material-symbols-outlined fw-bold position-absolute icon"
+                >mosque</span
+              >
+            </div>
+            <hr />
+            <div class="footer d-flex justify-content-around">
+              <h3 id="mednight" class="pray"></h3>
+              <span class="prayTime">موعد الصلاة</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./node_modules/axios/dist/axios.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
