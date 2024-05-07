@@ -1,4 +1,4 @@
-const axios = require('axios/dist/browser/axios.cjs'); // browser
+import axios from 'axios';
 let cities = [
     {
         arabicName: 'القاهرة',
@@ -69,6 +69,7 @@ function getApi(cityName) {
         country: "EG",
         city: cityName
     }
+    
     axios.get('http://api.aladhan.com/v1/timingsByCity', {
         params: params
 
