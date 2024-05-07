@@ -1,3 +1,4 @@
+const axios = require('axios/dist/browser/axios.cjs'); // browser
 let cities = [
     {
         arabicName: 'القاهرة',
